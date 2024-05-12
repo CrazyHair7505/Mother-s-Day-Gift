@@ -1,57 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beating Heart Animation</title>
-    <style>
-        /* Style the heart shape */
-        .heart {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            transform: rotate(-45deg);
-        }
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<link rel = "stylesheet" href = "style.css"> 
+	<link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity= 
+"sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" /> 
+</head> 
 
-        /* Create the heartbeat animation */
-        .heart::before,
-        .heart::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            border-radius: 50%;
-        }
+<body> 
+	<div> 
+		<i class="fas fa-heart" aria-hidden="true"></i> 
+	</div> 
+</body> 
 
-        .heart::before {
-            left: 50px;
-            border-radius: 50% 50% 0 0;
-        }
-
-        .heart::after {
-            left: 0;
-            border-radius: 50% 50% 0 0;
-        }
-
-        /* Add the heartbeat animation */
-        .heart {
-            animation: heartbeat 1s infinite alternate;
-        }
-
-        @keyframes heartbeat {
-            0% {
-                transform: scale(1);
-            }
-            100% {
-                transform: scale(1.1);
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="heart"></div>
-</body>
 </html>
